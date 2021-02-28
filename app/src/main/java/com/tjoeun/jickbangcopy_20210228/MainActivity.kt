@@ -2,10 +2,26 @@ package com.tjoeun.jickbangcopy_20210228
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tjoeun.jickbangcopy_20210228.datas.Room
 
 class MainActivity : AppCompatActivity() {
+
+    val mRoomList = ArrayList<Room>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mRoomList.add(Room(8000, "서울시 종로구", 4, "종로의 4층 방"))
+        mRoomList.add(Room(9000, "서울시 동대문구", 3, "동대문의 3층 방"))
+        mRoomList.add(Room(8000, "서울시 강남구", 11, "강남의 11층 방"))
+        mRoomList.add(Room(1100, "서울시 서대문구", 1, "종로의 4층 방"))
+        mRoomList.add(Room(10000, "서울시 은평구", 0, "종로의 4층 방"))
+        mRoomList.add(Room(26000, "경기도 성남시", 2, "종로의 4층 방"))
+        mRoomList.add(Room(12000, "서울시 강북구", -2, "종로의 4층 방"))
+        mRoomList.add(Room(15000, "충청도 천안시", 4, "종로의 4층 방"))
+        mRoomList.add(Room(18000, "경기도 용인시", 15, "종로의 4층 방"))
+        mRoomList.add(Room(14000, "서울시 마포구", 0, "종로의 4층 방"))
+        mRoomList.add(Room(22500, "경기도 고양시", 9, "종로의 4층 방"))
     }
 }
