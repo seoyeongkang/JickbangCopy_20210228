@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         mRoomList.add(Room(8000, "서울시 종로구", 4, "종로의 4층 방"))
         mRoomList.add(Room(9000, "서울시 동대문구", 3, "동대문의 3층 방"))
         mRoomList.add(Room(8000, "서울시 강남구", 11, "강남의 11층 방"))
-        mRoomList.add(Room(1100, "서울시 서대문구", 1, "종로의 4층 방"))
+        mRoomList.add(Room(1100, "서울시 서대문구", -1, "종로의 4층 방"))
         mRoomList.add(Room(10000, "서울시 은평구", 0, "종로의 4층 방"))
         mRoomList.add(Room(26000, "경기도 성남시", 2, "종로의 4층 방"))
         mRoomList.add(Room(12000, "서울시 강북구", -2, "종로의 4층 방"))
