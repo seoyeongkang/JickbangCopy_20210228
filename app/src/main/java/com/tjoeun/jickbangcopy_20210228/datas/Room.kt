@@ -1,5 +1,6 @@
 package com.tjoeun.jickbangcopy_20210228.datas
 
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -7,7 +8,7 @@ class Room(
     val price:Int,
     val address:String,
     val floor:Int,
-    val description:String ) {
+    val description:String ) : Serializable{
 
 //    가격 값에 따라 => 억단위 표시 여부 가공 기능 -> 함수로, " 5억 4,500" String
 

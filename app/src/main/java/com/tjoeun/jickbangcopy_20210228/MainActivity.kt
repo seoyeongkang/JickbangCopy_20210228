@@ -1,5 +1,6 @@
 package com.tjoeun.jickbangcopy_20210228
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -31,5 +32,20 @@ class MainActivity : AppCompatActivity() {
 
         mAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
         roomListView.adapter = mAdapter
+
+        roomListView.setOnItemClickListener { parent, view, position, id ->
+
+//            클릭 된 방이 어떤 방인지 ?
+            val clickedRoom = mRoomList[position]
+
+//            이 방 정보를 등록 => 상세 화면으로 이동 Intent(2) 사용
+
+            val myintent = Intent(this, ViewRoomDetailActivity::class.java)
+
+            myintent.putExtra("roomInfo", clickedRoom)
+            
+            startActivity(myintent)
+
+        }
     }
 }
